@@ -1,0 +1,306 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Author:	Angelina Magidova
+Version:	1.0
+-------------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+[Table of Contents]
+
+1. COMMON
+2. HEADER
+3. HOME
+4. SERVICES
+5. STANDARTS	
+
+MEDIA
+*/
+/*===============================================*/
+/* 1. COMMON		 						 */
+/*===============================================*/
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+body, p, a, div {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.main_indentation {
+    padding-bottom: 110px;
+    padding-top: 110px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #323232;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    margin: auto;
+}
+
+/*===============================================*/
+/* 2. HEADER		 						 */
+/*===============================================*/
+
+header {
+    height: 100px;
+    background: none;
+    border-bottom: 1px solid #A1A1A1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu a {
+    margin-left: 40px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+/*===============================================*/
+/* 3. HOME	 						 */
+/*===============================================*/
+
+#home {
+    background-image: url(./img/Rectangle.png);
+    height: 100vh;
+}
+
+#home .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;  
+    width: 100%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.home-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.home-btn {
+    background: #4985FF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 36px;
+    cursor: pointer;
+}
+
+/*===============================================*/
+/* 4.SERVICES	 						 */
+/*===============================================*/
+
+#services {
+    background: #fff;
+}
+
+#services .title {
+    width: 710px;
+    margin-bottom: 50px;
+}
+
+#services .subtitle {
+    width: 710px;
+    margin-bottom: 70px;
+}
+
+.services-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+
+.site-creation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.site-creation-content {
+    width: 200px;
+    margin-left: 17px;
+}
+
+.site-creation-content p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.site-creation-content p:last-child {
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.services-btn {
+    background: #4985FF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 36px;
+    margin-top: 65px;
+}
+
+/*===============================================*/
+/* 5. STANDARTS	 						 */
+
+
+#standards {
+    background: #F6F6F8;
+}
+
+.standards-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.standards-body-left, .standards-body-right {
+    width: 50%;
+}
+
+.standards-body-left p:first-child {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+    max-width: 424px;
+    margin-bottom: 40px;
+}
+
+.standards-body-left p:last-of-type {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    max-width: 489px;
+    margin-bottom: 30px;
+}
+
+.standards-body-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.standards-body-left a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+    cursor: pointer;
+}
+
+.standards-footer {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 70px;
+}
+
+.standards-footer-block div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.standards-footer-block div p {
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+}
+
+.standards-footer-block p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+}
+
+.standards-footer-block {
+    margin-right: 100px;
+}
+
+/*===============================================*/
+/* MEDIA	 						 */
+/*===============================================*/
+
+@media all and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    
+}
