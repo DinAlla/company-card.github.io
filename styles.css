@@ -12,6 +12,8 @@ Version:	1.0
 3. HOME
 4. SERVICES
 5. STANDARTS	
+6. WORKS
+7. PROJECTS
 
 MEDIA
 */
@@ -181,12 +183,15 @@ header .container {
 .site-creation {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    height: 150px;
 }
 
 .site-creation-content {
     width: 200px;
     margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .site-creation-content p:first-child {
@@ -292,6 +297,111 @@ header .container {
 
 .standards-footer-block {
     margin-right: 100px;
+}
+
+/*===============================================*/
+/* 6. WORKS		 						 */
+/*===============================================*/
+
+#works {
+    background: linear-gradient(#5F12D0 50%, #fff 50%);
+}
+
+.works-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.works-title .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin: 0;
+    width: 540px;
+    text-align: inherit;
+}
+
+.works-title .services-btn {
+    margin: auto 0;
+}
+
+.works-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 85px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.works-block {
+    margin: 0 15px;
+    max-width: 350px;
+}
+
+.works-block:first-child {
+    margin-left: 0;
+}
+
+.works-block:last-child {
+    margin-right: 0;
+}
+
+.works-block img {
+    margin-bottom: 30px;
+}
+
+.works-block-text p:nth-child(1) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.works-block-text p:nth-child(1) span {
+    color: #4985FF;
+}
+
+.works-block-text p:nth-child(2) {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.works-block-text a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+}
+
+/*===============================================*/
+/* 7. PROJECTS		 						 */
+/*===============================================*/
+
+#projects {
+    background: #F6F6F8;
+}
+
+#projects .container {
+    text-align: center;
+}
+
+#projects .title {
+    margin-bottom: 50px;
+}
+
+#projects .subtitle {
+    max-width: 730px;
+    margin-bottom: 70px; 
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
 }
 
 /*===============================================*/
