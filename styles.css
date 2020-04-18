@@ -11,9 +11,12 @@ Version:	1.0
 2. HEADER
 3. HOME
 4. SERVICES
-5. STANDARTS	
+5. STANDARTS
 6. WORKS
 7. PROJECTS
+8. VIDEO
+9. EMAIL
+10. FOOTER
 
 MEDIA
 */
@@ -76,6 +79,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 100;
 }
 
 header .container {
@@ -111,8 +115,9 @@ header .container {
 /*===============================================*/
 
 #home {
-    background-image: url(./img/Rectangle.png);
+    background: url(./img/Rectangle.png) no-repeat;
     height: 100vh;
+    max-height: 900px;
 }
 
 #home .container {
@@ -127,7 +132,7 @@ header .container {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;  
+    text-align: center;
     width: 100%;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -395,13 +400,235 @@ header .container {
 
 #projects .subtitle {
     max-width: 730px;
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
 }
 
 .projects-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
+}
+
+/*===============================================*/
+/* 7. VIDEO		 						 */
+/*===============================================*/
+
+.video {
+    position: relative;
+    padding: 70px 0 95px;
+}
+
+.back-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 570px;
+    top: 0;
+    overflow: hidden;
+}
+
+.back-container img {
+    width: 100%;
+    height: auto;
+}
+
+.video .title {
+    color: #FFFFFF;
+}
+
+.video .subtitle {
+    color: #FFFFFF;
+    padding: 30px 0 70px;
+}
+
+.video-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn {
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.play-btn:hover {
+    background: #ffffff38;
+    box-shadow: 4px 2px 14px 5px #00000080;
+}
+
+.play-icon {
+    margin-right: 20px;
+}
+
+.video-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/*===============================================*/
+/* EMAIL	 						 */
+/*===============================================*/
+
+.email .container {
+    border-top: 1px solid #e0e0e0e0;
+    padding: 85px 0;
+}
+
+.email .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.email .subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    padding-bottom: 30px;
+}
+
+.email-footer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
+}
+
+.email-content {
+    width: 490px;
+    margin: auto auto 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 33px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    position: relative;
+}
+
+.email-content input {
+    background: none;
+    padding: 15px 33px 13px;
+    border: 1px solid #F2F2F2;
+    width: 60%;
+    border-radius: 33px 0 0 33px;
+}
+
+.email-content button {
+    background: #4985FF;
+    border: 1px solid #4985FF;
+    padding: 15px 36px 13px 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 40%;
+    border-radius: 0 33px 33px 0;
+}
+
+::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999999;
+}
+
+.error {
+    position: absolute;
+    left: 33px;
+    bottom: -20px;
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: none;
+}
+
+/*===============================================*/
+/* FOOTER	 						 */
+/*===============================================*/
+
+footer {
+    background: #F6F6F8;
+    padding: 70px 0 0;
+}
+
+.column-header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding-bottom: 35px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-bottom: 70px;
+}
+
+.column {
+    margin-right: 43px;
+    width: 240px;
+}
+
+.footer-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+
+.footer-line-container a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-line-container svg {
+    margin-right: 15px;
+}
+
+.sub-footer {
+    padding: 30px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.sub-footer p {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
 }
 
 /*===============================================*/
@@ -412,5 +639,5 @@ header .container {
     .container {
         width: 90%;
     }
-    
+
 }
