@@ -639,5 +639,23 @@ footer {
     .container {
         width: 90%;
     }
+}
+
+@media all and (max-width: 600px) {
+    /* HOME */
+
+    #home .container {
+        padding: 40px 0 0 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .home-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media all and (max-width: 600px) {
 
 }
